@@ -19,3 +19,13 @@ section.bg-light {
 h2 {
     margin-bottom: 10px;
 }
+
+/* Define additional CSS variables for dark and light themes */
+
+/* Light theme colors */
+.light-theme-section-odd { background-color: white; }
+.light-theme-section-even { background-color: #f0f0f0; } /* Light grey */
+
+/* Dark theme colors */
+.dark-theme-section-odd { background-color: #333; } /* Dark grey */
+.dark-theme-section-even { background-color: #4f4f4f; } /* Light grey */
