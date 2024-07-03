@@ -1,133 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paulina Delmore's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Paulina Delmore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+              aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet" />
-
-    <script src="https://kit.fontawesome.com/ecdb1cb2a9.js" crossorigin="anonymous"></script>
-
-    <script src="app.js"></script>
-
-    <title>Paulina Delmore</title>
-  </head>
-  <body>
-    <section class="header">
-      <nav>
-        <div class="logo">paulinadelmore.dev</div>
-        <ul id="nav-list">
-          <li><a href="#about-me">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact-me"></a>Contact me</a></li>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <button class="hamburger" id="hamburger">
-          <i class="fas fa-bars"></i>
-        </button>
-      </nav>
-      <div class="header-area">
-        <div class="header-text">
-          <h1>Paulina Delmore</h1>
-          <h3>Full Stack Developer</h3>
-            <div class="button">
-              <a href="#about-me">About me</a>
-            </div>
-        </div>
-        <div class="socials">
-          <div>
-            <a href="https://linkedin.com">
-              <span style="color: white">
-                <i class="fa-brands fa-linkedin"></i>
-              </span>
-            </a>
-          </div>
-          <div>
-            <a href="https://github.com">
-              <span style="color: white">
-                <i class="fa-brands fa-square-github"></i>
-              </span>
-            </a>
-          </div>
+      </div>
+
+
+    </div>
+  </nav>
+</header>
+<main>
+  <section id="home" class="text-center">
+    <div class="container">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Hi, I'm Paulina Delmore, a software developer.</p>
+      <img class="rounded" src="img/photo.png" width="200px" alt="" />
+    </div>
+  </section>
+  <section id="about" class="text-center bg-light">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="row">
+        <div class="col-md-auto">
+          <p>I am a dedicated software developer with experience in full-stack development, cloud computing, and agile
+            methodologies. I enjoy building dynamic and interactive web applications.</p>
         </div>
       </div>
-    </section>
-
-    <section class="sub-section" id="about-me">
-      <div class="information">
-        <h2>About Me</h2>
-        <p>
-          Hello! My name is Paulina Delmore. I am a Software Developer Student.
-        </p>
-      </div>
-      <div class="headshot-div">
-        <img class="headshot" src="img/photo.png" alt="" />
-      </div>
-    </section>
-
-    <section class="sub-section-alternative" id="projects">
+    </div>
+  </section>
+  <section id="projects" class="text-center py-5">
+    <div class="container">
       <h2>Projects</h2>
-      <div class="project-div">
-
-        <div class="project-card">
-          <div class="image"><img src="img/project1.jpg" alt="project one image" class="project-img"></div>
-          <h3>Project one</h3>
-          <p class="subtext">This is my project and some text about it.</p>
-          <hr />
-          <p class="subtext">
-            <a class="project-link" href="https://www.github.com">
-              View here
-            </a>
-          </p>
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Task Management App</h3>
+          <img src="https://images.unsplash.com/photo-1678690832311-bb6e361989ca?q=80&w=2124&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+               class="img-thumbnail border-3 rounded-4" alt="...">
+          <p>Developed a full-stack web application for managing tasks using Java, Spring Boot, and React.</p>
         </div>
-
-        <div class="project-card">
-          <div><img src="img/project2.jpg" alt="project two image" class="project-img"></div>
-          <h3>Project two</h3>
-          <p class="subtext">This is my project and some text about it.</p>
-          <hr />
-          <p class="subtext">
-            <a class="project-link" href="https://www.github.com">
-              View here
-            </a>
-            </p>
+        <div class="col-md-4">
+          <h3>Healthcare Management System</h3>
+          <img src="https://images.unsplash.com/photo-1678690832311-bb6e361989ca?q=80&w=2124&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+               class="img-thumbnail border-3 rounded-4" alt="...">
+          <p>Created a web application to assist healthcare professionals in managing treatment notes efficiently, using
+            JavaScript and PostgreSQL.</p>
         </div>
-
-        <div class="project-card">
-          <div><img src="img/project3.jpg" alt="project three image" class="project-img"></div>
-          <h3>Project three</h3>
-          <p class="subtext">This is my project and some text about it.</p>
-          <hr />
-          <p class="subtext">
-            <a class="project-link" href="https://www.github.com">
-              View here
-            </a>
-            </p>
+        <div class="col-md-4">
+          <h3>Social Media Platform</h3>
+          <img src="https://images.unsplash.com/photo-1678690832311-bb6e361989ca?q=80&w=2124&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+               class="img-thumbnail border-3 rounded-4" alt="...">
+          <p>Built a social media platform using Ruby on Rails, HTML, CSS, and AJAX to simulate real-time
+            interactions.</p>
         </div>
-
-        <div class="project-card">
-          <div class="image"><img src="img/project4.jpg" alt="project two image" class="project-img"></div>
-          <h3>Project four</h3>
-          <p class="subtext">This is my project and some text about it.</p>
-          <hr />
-          <p class="subtext">
-            <a class="project-link" href="https://www.github.com">
-              View here
-            </a>
-            </p>
-        </div>
-
-
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer id="contact-me">
-      <h2>Contact Me</h2>
-      <p class="subtext">delmore.paulina@gmail.com</p>
-    </footer>
+</main>
+<footer>
+  <section id="contact" class="text-center bg-light">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Feel free to reach out to me at delmore.paulina@gmail.com.</p>
+    </div>
 
-  </body>
+    <div class="container">
+      <a href="https://linkedin.com">
+        <i class="bi bi-linkedin" style="font-size: 2rem; color: black;"></i>
+      </a>
+      <a href="https://github.com">
+        <i class="bi bi-github" style="font-size: 2rem; color: black;"></i>
+      </a>
+    </div>
+  </section>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<!--<script src="https://kit.fontawesome.com/ecdb1cb2a9.js" crossorigin="anonymous"></script>-->
+<script src="app.js"></script>
+</body>
 </html>
